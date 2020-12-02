@@ -14,6 +14,9 @@ import BaiTapTruyenFunction from './Components/BaiTapProps/BaiTapTruyenFunction/
 import BaiTapRenderWithMap from './RenderWithMap/BaiTapRenderWithMap';
 import DemoDropRFC from './NhapProps/DemoDropRFC';
 import DemoDropsRCC from './NhapProps/DemoDropsRCC';
+import PropsWithEvent from './NhapProps/PropsWithEvent';
+import BaiTapGioHang from './NhapProps/BaiTapVoHang/BaiTapGioHang';
+import NhapVoHang from './Components/BaiTapProps/NhapBaiTapVoHang/NhapVoHang';
 
 function App() {
   return (
@@ -27,10 +30,15 @@ function App() {
       {/* <RenderWithMap/> */}
       {/* <DemoProps/> */}
       {/* <BaiTapTruyenFunction/> */}
-      <BaiTapRenderWithMap />
-      <div className="hinhAnhPhim">HELLO COCO</div>
-      <DemoDropRFC/>
-      <DemoDropsRCC/>
+      {/* <BaiTapRenderWithMap /> */}
+      {/* <div className="hinhAnhPhim">HELLO COCO</div> */}
+      {/* <DemoDropRFC/> */}
+      {/* <DemoDropsRCC/> */}
+      {/* <PropsWithEvent/> */}
+
+      {/* <BaiTapGioHang/> */}
+      <NhapVoHang/>
+
     </div>
   );
 }

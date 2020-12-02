@@ -6,10 +6,12 @@ export default class ProductList extends Component {
 
 
     renderSanPham = () => {
+
         let {mangSanPham} = this.props;
+        const {xemChiTiet} = this.props;
         return mangSanPham.map((sp, index) => {
             return (
-                <Product sanPham = {sp} key = {index}/>
+                <Product xemChiTiet = {xemChiTiet} sanPham = {sp} key = {index}/>
             )
         })
     }

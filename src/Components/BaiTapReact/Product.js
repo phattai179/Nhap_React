@@ -4,8 +4,8 @@ export default class Product extends Component {
     render() {
 
 
-        let { sanPham } = this.props;
-
+        let {sanPham,} = this.props;
+        const {xemChiTiet} = this.props
         // let sanPham = this.props.sanPham;
 
         return (
@@ -16,7 +16,7 @@ export default class Product extends Component {
                         <div className="card-body text-center">
                             <h4 className="card-title text-center">{sanPham.tenSP}</h4>
                             <p className="card-text">{sanPham.gia}</p>
-                            <a href="#" className="btn btn-primary">Detail</a>
+                            <a onClick = {() => xemChiTiet(sanPham)} href="#" className="btn btn-primary" data-toggle="modal" data-target="#modelId">Detail</a>
                             <a href="#" className="btn btn-danger">Cart</a>
                         </div>
                     </div>
